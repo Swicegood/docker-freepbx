@@ -196,6 +196,7 @@ EOF
     fwconsole ma recordings
     fwconsole ma announcement
     fwconsole ma ivr
+    fwconsole ma setcid
     fwconsole ma downloadinstall certman userman pm2 backup
     fwconsole chown 
     fwconsole reload 
