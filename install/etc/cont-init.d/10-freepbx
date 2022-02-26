@@ -183,20 +183,20 @@ EOF
   fi
 
     fwconsole ma downloadinstall voicemail sipsettings 
-    fwconsole ma infoservices 
-    fwconsole ma featurecodeadmin 
-    fwconsole ma logfiles 
-    fwconsole ma conferences 
-    fwconsole ma callrecording 
-    fwconsole ma dashboard 
-    fwconsole ma music 
-    fwconsole ma callrecording
-    fwconsole ma asteriskinfo
-    fwconsole ma ringgroups
-    fwconsole ma recordings
-    fwconsole ma announcement
-    fwconsole ma ivr
-    fwconsole ma setcid
+    fwconsole ma downloadinstall infoservices 
+    fwconsole ma downloadinstall featurecodeadmin 
+    fwconsole ma downloadinstall logfiles 
+    fwconsole ma downloadinstall conferences 
+    fwconsole ma downloadinstall callrecording 
+    fwconsole ma downloadinstall dashboard 
+    fwconsole ma downloadinstall music 
+    fwconsole ma downloadinstall callrecording
+    fwconsole ma downloadinstall asteriskinfo
+    fwconsole ma downloadinstall ringgroups
+    fwconsole ma downloadinstall recordings
+    fwconsole ma downloadinstall announcement
+    fwconsole ma downloadinstall ivr
+    fwconsole ma downloadinstall setcid
     fwconsole ma downloadinstall certman userman pm2 backup
     fwconsole chown 
     fwconsole reload 
