@@ -194,6 +194,7 @@ EOF
     fwconsole ma downloadinstall callrecording
     fwconsole ma downloadinstall asteriskinfo
     fwconsole ma downloadinstall ringgroups
+    fwconsole ma downloadinstall soundlang
     fwconsole ma downloadinstall recordings
     fwconsole ma downloadinstall announcement
     fwconsole ma downloadinstall ivr
