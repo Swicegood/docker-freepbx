@@ -11,19 +11,12 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
-      secrets:
-        - name: dcokerhub
-      env_vars:
-        - name: FOO_1
-          value: BAR_1
-  - name: 'Block #2'
-    task:
-      jobs:
-        - name: 'Job #1'
-          commands:
             - echo $DOCKER_PASSWORD | docker login --username "$DOCKER_USERNAME" --password-stdin
             - 'docker pull $DOCKER_USERNAME/docker-freepbx:latest || true'
             - 'docker build --cache-from=$DOCKER_USERNAME/docker-freepbx:latest -t $DOCKER_USERNAME/docker-freepbx:latest .'
             - 'docker push $DOCKER_USERNAME/docker-freepbx:latest'
       secrets:
         - name: dcokerhub
+      env_vars:
+        - name: FOO_1
+          value: BAR_1
