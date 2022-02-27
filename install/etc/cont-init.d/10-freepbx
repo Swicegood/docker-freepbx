@@ -182,24 +182,23 @@ EOF
     fwconsole ma install cdr
   fi
 
-    fwconsole ma downloadinstall voicemail sipsettings 
-    
-    fwconsole ma downloadinstall infoservices 
-    fwconsole ma downloadinstall featurecodeadmin 
-    fwconsole ma downloadinstall logfiles 
-    fwconsole ma downloadinstall conferences 
-    fwconsole ma downloadinstall callrecording 
-    fwconsole ma downloadinstall dashboard 
-    fwconsole ma downloadinstall music 
-    fwconsole ma downloadinstall callrecording
-    fwconsole ma downloadinstall asteriskinfo
-    fwconsole ma downloadinstall ringgroups
-    fwconsole ma downloadinstall soundlang
-    fwconsole ma downloadinstall recordings
-    fwconsole ma downloadinstall announcement
-    fwconsole ma downloadinstall ivr
-    fwconsole ma downloadinstall setcid
-    fwconsole ma downloadinstall certman userman pm2 backup
+    fwconsole ma downloadinstall voicemail sipsettings infoservices featurecodeadmin logfiles conferences callrecording dashboard music
+fwconsole ma downloadinstall infoservices
+fwconsole ma downloadinstall featurecodeadmin
+fwconsole ma downloadinstall logfiles
+fwconsole ma downloadinstall conferences
+fwconsole ma downloadinstall callrecording
+fwconsole ma downloadinstall dashboard
+fwconsole ma downloadinstall music
+fwconsole ma downloadinstall callrecording
+fwconsole ma downloadinstall asteriskinfo
+fwconsole ma downloadinstall ringgroups
+fwconsole ma downloadinstall soundlang
+fwconsole ma downloadinstall recordings
+fwconsole ma downloadinstall announcement
+fwconsole ma downloadinstall ivr
+fwconsole ma downloadinstall setcid
+    fwconsole ma downloadinstall certman userman pm2
     fwconsole chown 
     fwconsole reload 
     chown -R asterisk. /home/asterisk/.npm
