@@ -253,7 +253,6 @@ EOF
     for module in $modules
     do
       print_notice "- ${module}"
-      check_process
       fwconsole ma downloadinstall "$module"
     done
   fi
@@ -263,7 +262,7 @@ EOF
   print_info "Finished installation of FreePBX modules - proceeding with next phase of install"
   cd /
   rm -rf /usr/src/freepbx
-  
+
   fwconsole backup --restore /var/spool/asterisk/backup/Default_backup/20220201-000001-1643691601-14.0.13.23-1741326549.tgz
   touch /data/.installed
   echo "$ASTERISK_VERSION" > /etc/asterisk/.asterisk-version
