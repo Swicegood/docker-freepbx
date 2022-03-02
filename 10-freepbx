@@ -263,7 +263,7 @@ EOF
   cd /
   rm -rf /usr/src/freepbx
 
-  fwconsole backup --restore /var/spool/asterisk/backup/Default_backup/20220201-000001-1643691601-14.0.13.23-1741326549.tgz
+ # fwconsole backup --restore /var/spool/asterisk/backup/Default_backup/20220201-000001-1643691601-14.0.13.23-1741326549.tgz
   touch /data/.installed
   echo "$ASTERISK_VERSION" > /etc/asterisk/.asterisk-version
 fi
